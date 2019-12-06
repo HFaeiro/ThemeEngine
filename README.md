@@ -5,8 +5,11 @@ My Custom win32 Button/edit and listview lib/procedures.
 Usage:
 
 if using just the list view you will have to use
+
 InitializeListView(HINSTANCE, HBRUSH); //HBRUSH is for background color.
+
 if you plan on using the full theme engine with custom buttons and edit controls you must also use 
+
 Theme::Initialize(HINSTANCE, HBRUSH);
 
 there is a function called Theme::CWindow. this takes almost the same params as CreateWindow and must be used to create a Theme::Button or Theme::edit window. 
