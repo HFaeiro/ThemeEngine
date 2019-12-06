@@ -12,7 +12,9 @@ if you plan on using the full theme engine with custom buttons and edit controls
 
 Theme::Initialize(HINSTANCE, HBRUSH);
 
-there is a function called Theme::CWindow. this takes almost the same params as CreateWindow and must be used to create a Theme::Button or Theme::edit window. 
+there is a function called Theme::CWindow. this takes almost the same params as CreateWindow and must be used to create a Theme::Button or Theme::edit window. The first two params are new to createWindow and they are to integrate a font with the button. 
+the first param is a RECT and are the first 4 parameters of the CreateFont WINDOWS function. the second is just a wchar_t of the font name to be used. 
+
 ex: 
 
 for a button:
