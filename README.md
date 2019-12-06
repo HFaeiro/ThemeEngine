@@ -27,7 +27,7 @@ Theme::CWindow(r, L"Segoe UI", L"CEDIT", L"Port", WS_VISIBLE,
    
    there are a few commands that will be quite useful. 
    
-   IDB_ADD - adds a std::vector<std::wstring> to the list view to as a ROW as an LPARAM 
+   IDB_ADD - adds a std::vector<std::wstring> to the listview as a ROW through the LPARAM 
    
    Ex.. SendMessage(ListView, IDB_ADD, NULL, std::vector<std::wstring>)
    
